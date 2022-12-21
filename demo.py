@@ -16,7 +16,6 @@ def load_file_to_data(file, srate=16_000):
     return batch
 
 
-max_length = 128000
 processor = Wav2Vec2Processor.from_pretrained(asr_model)
 model = Wav2Vec2ForCTC.from_pretrained(asr_model).to(device)
 
