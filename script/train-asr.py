@@ -6,12 +6,10 @@ from transformers import Wav2Vec2ForCTC, TrainingArguments, Trainer
 language_code = 'ar'
 language_name = 'arabic'
 base_model = "facebook/wav2vec2-large-xlsr-53"
+new_output_models_dir = f"output_models/{language_code}/wav2vec2-large-xlsr-{language_name}"
 
 
 if __name__ == '__main__':
-
-    output_models_dir = f"output_models/{language_code}/wav2vec2-large-xlsr-{language_name}-demo"
-    new_output_models_dir = f"output_models/{language_code}/wav2vec2-large-xlsr-{language_name}"
 
     data_loader = TrainingPipeline()
     data_loader.init()
