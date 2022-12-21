@@ -30,7 +30,7 @@ Copy the dataset in `dataset/ar/` folder and run `python script/train_asr.py`.
 
 ## Usage
 
-The model can be used directly (without a language model) as follows:
+The model demo can be used directly as follows `python demo.py`:
 
 ```python
 import librosa
@@ -80,7 +80,7 @@ predicted: هل يمكنني التحدث مع المسؤول هنا
 
 ## Evaluation
 
-The model can be evaluated as follows on the Arabic test data of [Common Voice](https://huggingface.co/datasets/common_voice). 
+The model can be evaluated as follows on the Arabic test data of [Common Voice](https://huggingface.co/datasets/common_voice). `python eval_asr.py`
 
 ```python
 import torch
@@ -157,7 +157,7 @@ reference: .ركب توم السيارة
 predicted: ركب توم السيارة
 ```
 
-The model evaluation **(WER)** on the Arabic test data of [Common Voice](https://huggingface.co/datasets/common_voice). 
+The model evaluation **(WER)** on the Arabic test data of [Common Voice](https://huggingface.co/datasets/common_voice). `python eval_model.py`
 
 ```python
 import re
