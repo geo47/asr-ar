@@ -13,7 +13,20 @@ The [Common Voice Corpus 6.1](https://commonvoice.mozilla.org/en/datasets) `trai
 The model is fine-tuned on [XLS-R: Self-supervised Corss-lingual Speech Representation Learning at Scale](https://arxiv.org/pdf/2111.09296.pdf). 
 When using this model, make sure that your speech input is sampled at 16kHz.
 
-Most of the code used in this work has been adotpted from [this repo](https://github.com/lectly/wav2vec2-large-xlsr-53-egyptian-arabic) 
+Most of the code used in this work has been adotpted from [this repo](https://github.com/lectly/wav2vec2-large-xlsr-53-egyptian-arabic).
+
+Before training and using make sure to download the [Common Voice Corpus 6.1](https://commonvoice.mozilla.org/en/datasets) dataset and install the following dependencies.
+
+```shell
+pip install librosa
+pip install torchaudio
+pip install transformers
+pip install datasets
+pip install jiwer
+pip install arabic_pronounce
+```
+
+Copy the dataset in `dataset/ar/` folder and run `python script/train_asr.py`. 
 
 ## Usage
 
@@ -38,7 +51,6 @@ def load_file_to_data(file, srate=16_000):
     return batch
 
 
-max_length = 128000
 processor = Wav2Vec2Processor.from_pretrained(asr_model)
 model = Wav2Vec2ForCTC.from_pretrained(asr_model).to(device)
 
