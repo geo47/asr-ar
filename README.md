@@ -64,7 +64,6 @@ def predict(data):
         predicted = torch.argmax(model(input_values, attention_mask=attention_mask).logits, dim=-1)
 
     data["predicted"] = processor.tokenizer.decode(predicted[0])
-    print(data["predicted"])
     print("predicted:", buckwalter.untrans(data["predicted"]))
     return data
 
