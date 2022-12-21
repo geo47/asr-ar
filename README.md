@@ -13,7 +13,7 @@ The [Common Voice Corpus 6.1](https://commonvoice.mozilla.org/en/datasets) `trai
 The model is fine-tuned on [XLS-R: Self-supervised Corss-lingual Speech Representation Learning at Scale](https://arxiv.org/pdf/2111.09296.pdf). 
 When using this model, make sure that your speech input is sampled at 16kHz.
 
-Most of the code used in this work has been adotpted from [this repo](https://github.com/lectly/wav2vec2-large-xlsr-53-egyptian-arabic).
+Most of the code used in this work has been adotpted from [this repo](https://github.com/anashas/Fine-Tuning-of-XLSR-Wav2Vec2-on-Arabic).
 
 Before training and using make sure to download the [Common Voice Corpus 6.1](https://commonvoice.mozilla.org/en/datasets) dataset and install the following dependencies.
 
