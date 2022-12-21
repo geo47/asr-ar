@@ -18,7 +18,6 @@ language_code = 'ar'
 language_name = 'arabic'
 dataset_dir = "dataset/ar/"
 base_model = "facebook/wav2vec2-large-xlsr-53"
-output_models_dir = f"output_models/{language_code}/wav2vec2-large-xlsr-{language_name}-demo"
 new_output_models_dir = f"output_models/{language_code}/wav2vec2-large-xlsr-{language_name}"
 
 
