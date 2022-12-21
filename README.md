@@ -72,7 +72,6 @@ predict(load_file_to_data("common_voice_ar_19058307.mp3"))
 ```
 **Output Result**:
 ```shell
-reference: هل يمكنني التحدث مع المسؤول هنا
 predicted: هل يمكنني التحدث مع المسؤول هنا
 ```
 
